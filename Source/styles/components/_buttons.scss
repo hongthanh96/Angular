@@ -1,0 +1,26 @@
+.button {
+    padding: $normal $larger;
+
+    font-size: $normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    border-radius: 40px;
+    border: none;
+    outline: none;
+
+    color: $light;
+    background-color: $primary;
+
+    &.-bg-medium {
+        background-color: $medium;
+    }
+    &.-bg-secondary{
+        background-color: $secondary;
+    }
+    &.-bg-primary{
+        background-color: $primary;
+    }
+
+}

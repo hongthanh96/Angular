@@ -1,0 +1,292 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600;700&display=swap");
+
+// Variables
+@import "./variables/typography";
+@import "./variables/colors";
+@import "./variables/break-points";
+
+// Components Style
+@import "./components/buttons";
+@import "./components/hiking-item";
+@import "./components/promotion-item";
+@import "./components/quote-item";
+
+html,
+body {
+  max-width: $breakPointLg;
+
+  margin: auto;
+
+  font-size: $normal;
+  font-family: "Open Sans", sans-serif;
+}
+
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//   }
+
+.header {
+  position: relative;
+  background-image: url("/images/Banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 900px;
+  width: 100%;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    position: relative;
+    z-index: 2;
+    &__img {
+      margin: 20px 20px;
+      width: 40%;
+    }
+    &__app {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &__list {
+        width: 70%;
+        display: flex;
+        list-style: none;
+        li {
+          padding-left: 50px;
+
+          a {
+            text-decoration: none;
+            color: $medium;
+            font-weight: 900;
+          }
+        }
+      }
+      form {
+        position: relative;
+        input {
+          border-radius: 20px;
+          outline: transparent;
+          background-color: $grey_white;
+          width: 130px;
+          height: 40px;
+          width: cover;
+          border: none;
+          align-items: center;
+        }
+        button {
+          background-color: transparent;
+          border: none;
+          img {
+            height: 20px;
+            position: absolute;
+            right: 30px;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__dolor {
+    display: flex;
+    position: relative;
+    &__des {
+      width:30%;
+      position: absolute;
+      top: 150px;
+      left: 100px;
+      &__h1 {
+        font-size: 60px;
+        color: $primary;
+        font-weight: 900;
+        text-shadow: 3px 3px 3px $medium;
+        text-transform: uppercase;
+        margin: 0px 0px;
+      }
+      &__h4 {
+        font-weight: 600;
+        letter-spacing: 4px;
+        margin-top: 15px;
+      }
+      &__button {
+        border-radius: 20px;
+        height: 40px;
+        width: 120px;
+        border: none;
+        color: #fefefd;
+        margin: 20px 0;
+        a {
+          text-decoration: none;
+          color: $medium;
+          font-weight: 800;
+        }
+      }
+      p {
+        color: $dark;
+        font-style: oblique;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.header::before {
+  background-image: url("/images/banner-shadow-top.png");
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 100%;
+}
+.header::after {
+  background-image: url("/images/banner-shadow-bottom.png");
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 120px;
+  top: 800px;
+}
+
+.letgo {
+  display: flex;
+  &__center {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    h1 {
+      color: $primary;
+      font-size: $larger_max;
+      font-weight: bold;
+    }
+    p {
+      color: $medium;
+      font-size: $large;
+    }
+  }
+}
+
+.letgo-button {
+  display: flex;
+  &__center {
+    margin: 20px auto;
+  }
+}
+
+.poster {
+  display: grid;
+  grid-template-columns: auto auto;
+  &__item {
+    position: relative;
+    height: 700px;
+    &.-bg-medium {
+      background-color: $medium;
+    }
+    &.-bg-secondary {
+      background-color: $secondary;
+    }
+    &__des {
+      position: absolute;
+      width: 65%;
+      text-align: left;
+      left: 50px;
+      top: 30px;
+
+      h2 {
+        color: $light;
+        font-weight: 800;
+        font-size: $larger_max;
+      }
+      p {
+        font-size: $large;
+        font-weight: 500;
+        color: $light;
+      }
+    }
+  }
+  &__cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.shape {
+  position: relative;
+  background-color: $medium;
+  height: 900px;
+  width: 100%;
+  &__des {
+    position: absolute;
+    width: 60%;
+    top: 300px;
+    left: 300px;
+    text-align: center;
+    h2 {
+      font-size: $larger_max;
+      color: $light;
+    }
+    p {
+      font-size: $large;
+      color: $white_p;
+    }
+  }
+}
+.shape::before {
+  background-image: url("/images/shape-top.png");
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 100%;
+}
+.shape::after{
+  background-image: url('/images/Shape1.png');
+  content: '';
+  position: absolute;
+  height: 330px;
+  width: 100%;
+  top: 650px;
+  z-index: 5;
+}
+
+.explore{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url('/images/poster.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__des{
+    position: absolute;
+    text-align: right;
+    width: 30%;
+    top: 300px;
+    left: 800px;
+    h1{
+      font-weight: 900;
+      font-size: $larger_max;
+      margin: 0px 0px;
+      font-style: italic;
+    }
+    &__orange{
+      color: $secondary;
+    }
+    &__gray{
+      color: $dark;
+    }
+    
+  }
+}
+.explore::after{
+  background-image: url('/images/shape-bottom.png');
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 540px;
+}

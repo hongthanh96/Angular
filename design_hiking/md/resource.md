@@ -1,0 +1,9 @@
+
+## Color
+color_gray: #54524f
+color_orange: #deb37e
+color_grey: #b0aca9
+color_grey_white: 8a837c
+color_white: #ffffff
+
+
