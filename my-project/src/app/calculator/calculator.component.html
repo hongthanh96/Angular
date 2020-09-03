@@ -1,0 +1,12 @@
+<h3>Awesome Calculator</h3>
+<div>
+  <input type="number" (input)="calculator()" name="" id="" placeholder="nhập số thứ nhất" [(ngModel)] = "number1">
+  <select name="" id="" (change)="calculator()" [(ngModel)] = "operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">x</option>
+    <option value="/">/</option>
+  </select>
+  <input type="number" (input)="calculator()" name="" id="" placeholder="Nhập số thứ 2" [(ngModel)] = "number2">
+</div>
+<div class="output">Kết quả: {{ output }}</div>

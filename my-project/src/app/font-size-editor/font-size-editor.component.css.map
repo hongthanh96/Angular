@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "font-size-editor.component.scss"
+    ],
+    "names": [],
+    "file": "font-size-editor.component.css"
+}

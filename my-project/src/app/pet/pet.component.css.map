@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "pet.component.scss"
+    ],
+    "names": [],
+    "file": "pet.component.css"
+}
